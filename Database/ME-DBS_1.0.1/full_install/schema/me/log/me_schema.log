@@ -1,0 +1,153 @@
+Creating the me schema......
+Please Wait.....
+Connected.
+
+Creating tablespaces
+================================
+
+Creating tablespace me_data                                                     
+Creating tablespace me_index                                                    
+
+PL/SQL procedure successfully completed.
+
+
+Creating tablespaces
+================================
+
+Creating tablespace me_common_data                                              
+Creating tablespace me_common_index                                             
+
+PL/SQL procedure successfully completed.
+
+
+Creating USER me_user
+========================
+
+
+User created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Creating USER me_schema
+========================
+
+
+User created.
+
+
+User altered.
+
+
+User altered.
+
+
+User altered.
+
+
+User altered.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+me schema created sucessfully..

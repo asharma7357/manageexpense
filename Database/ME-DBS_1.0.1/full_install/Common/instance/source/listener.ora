@@ -1,0 +1,10 @@
+# LISTENER.ORA Network Configuration File: 
+
+
+    (SID_DESC =
+      (GLOBAL_DBNAME = #DB_INSTANCE_NAME)
+      (ORACLE_HOME = #ORACLE_HOME)
+      (SID_NAME = #DB_INSTANCE_NAME)
+    )
+ 
+

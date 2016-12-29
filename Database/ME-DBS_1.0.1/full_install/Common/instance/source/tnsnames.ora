@@ -1,0 +1,16 @@
+# TNSNAMES.ORA Network Configuration File: 
+
+ 
+
+#DB_INSTANCE_NAME.#MACHINE_NAME =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = #MACHINE_NAME)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = #DB_INSTANCE_NAME)
+    )
+  )
+
+

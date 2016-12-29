@@ -1,0 +1,84 @@
+###########################################
+# Archive
+###########################################
+log_archive_format=#LOG_ARCHIVE_FORMAT
+log_archive_dest_1='LOCATION=#INSTALL_BASE#LOG_ARCHIVE_DEST_1'
+log_archive_dest_state_1=#LOG_ARCHIVE_DEST_STATE_1
+log_archive_max_processes=#LOG_ARCHIVE_MAX_PROCESSES
+log_checkpoint_interval=#LOG_CHECKPOINT_INTERVAL
+log_checkpoint_timeout=#LOG_CHECKPOINT_TIMEOUT
+ 
+###########################################
+# Cache and I/O
+###########################################
+db_block_size=#DB_BLOCK_SIZE
+db_file_multiblock_read_count=16
+ 
+###########################################
+# Cursors and Library Cache
+###########################################
+open_cursors=#OPEN_CURSORS
+ 
+###########################################
+# Database Identification
+###########################################
+db_domain="#DB_DOMAIN"
+db_name=#DB_INSTANCE_NAME
+ 
+###########################################
+# Diagnostics and Statistics
+###########################################
+background_dump_dest=#INSTALL_BASE/#DB_INSTANCE_NAME/bdump
+core_dump_dest=#INSTALL_BASE/#DB_INSTANCE_NAME/cdump
+user_dump_dest=#INSTALL_BASE/#DB_INSTANCE_NAME/udump
+ 
+###########################################
+# File Configuration
+###########################################
+control_files=("#INSTALL_BASE/#DB_INSTANCE_NAME/dbs/control01.ctl", "#INSTALL_BASE/#DB_INSTANCE_NAME/dbs/control02.ctl", "#INSTALL_BASE/#DB_INSTANCE_NAME/dbs/control03.ctl")
+db_recovery_file_dest=#INSTALL_BASE/#DB_INSTANCE_NAME/flash_recovery_area
+db_recovery_file_dest_size=2147483648
+ 
+###########################################
+# Job Queues
+###########################################
+job_queue_processes=#JOB_QUEUE_PROCESSES
+ 
+###########################################
+# Miscellaneous
+###########################################
+compatible=#COMPATIBLE
+open_links=10
+ 
+###########################################
+# Processes and Sessions
+###########################################
+processes=#PROCESSES
+ 
+###########################################
+# SGA Memory
+###########################################
+sga_target=#SGA_TARGET
+ 
+###########################################
+# Security and Auditing
+###########################################
+audit_file_dest=#INSTALL_BASE/#DB_INSTANCE_NAME/adump
+remote_login_passwordfile=EXCLUSIVE
+ 
+###########################################
+# Sort, Hash Joins, Bitmap Indexes
+###########################################
+pga_aggregate_target=#PGA_TARGET
+ 
+###########################################
+# System Managed Undo and Rollback Segments
+###########################################
+undo_management=AUTO
+undo_tablespace=UNDOTBS1
+
+###########################################
+# Optimizer
+###########################################
+optimizer_index_cost_adj=#OPT_INDEX_COST_ADJ
+optimizer_index_caching=#OPT_INDEX_CACHING

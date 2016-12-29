@@ -1,0 +1,3 @@
+prompt Loading PARTITION_SETTINGS...
+prompt Table is empty
+prompt Done.
