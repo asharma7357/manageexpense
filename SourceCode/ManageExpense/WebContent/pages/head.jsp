@@ -15,8 +15,11 @@
 <!-- Custom CSS -->
 <link href="./css/dist/css/sb-admin-2.css" rel="stylesheet">
 
-<!-- Morris Charts CSS -->
-<link href="./css/vendor/morrisjs/morris.css" rel="stylesheet">
-
 <!-- Custom Fonts -->
 <link href="./css/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<!-- Canvas JS -->
+<script type="text/javascript" src="./javascript/js/canvasjs.min.js"></script>
+
+<!-- Dashboard Charts -->
+<script type="text/javascript" src="./javascript/js/dashboardCharts.js"></script>

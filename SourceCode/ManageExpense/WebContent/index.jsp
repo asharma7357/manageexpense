@@ -8,7 +8,7 @@
 <body>
 	<div id="wrapper">
 		<%@ include file="/pages/navigation.jsp" %>
-		<%@ include file="/pages/accounts.jsp" %>
+		<%@ include file="/pages/dashboard.jsp" %>
 	</div>
 	<!-- /#wrapper -->
 	<%@ include file="/pages/footer.jsp" %>

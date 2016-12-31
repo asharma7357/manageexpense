@@ -1631,7 +1631,7 @@ Licensed under the BSD-2-Clause License.
     __extends(Donut, _super);
 
     Donut.prototype.defaults = {
-      colors: ['#D9534F', '#5CB85C', '#679DC6', '#95BBD7', '#B0CCE1', '#095791', '#095085', '#083E67', '#052C48', '#042135'],
+      colors: ['#D9534F', '#D9534F', '#D9534F', '#D9534F', '#D9534F', '#D9534F', '#D9534F', '#D9534F', '#D9534F', '#D9534F'],
       backgroundColor: '#FFFFFF',
       labelColor: '#000000',
       formatter: Morris.commas,

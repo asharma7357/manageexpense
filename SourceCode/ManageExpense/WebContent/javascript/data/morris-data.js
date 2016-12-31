@@ -1,33 +1,62 @@
 $(function() {
 
-	Morris.Donut({
-        element: 'morris-donut-chart',
+	Morris.Bar({
+        element: 'income-expense-owed-chart',
         data: [{
-            label: "Food",
-            value: 5000
-        },{
-            label: "Auto",
-            value: 4000
-        },{
-            label: "Movies",
-            value: 5000
-        },{
-            label: "Shopping",
-            value: 10000
-        },{
-            label: "Travel",
-            value: 15000
-        },{
-            label: "Income",
-            value: 250000
-        },{
-            label: "Child",
-            value: 10000
+            y: 'Income',
+            a: 480000
+        }, {
+            y: 'Expense',
+            a: 238000
+        }, {
+            y: 'Owed',
+            a: 10000
         }],
+        xkey: 'y',
+        ykeys: ['a'],
+        labels: ['December'],
+        hideHover: 'auto',
         resize: true
     });
-
-    Morris.Area({
+	
+	Morris.Bar({
+        element: 'morris-bar-chart',
+        data: [{
+            y: 'Apr',
+            a: 20000
+        }, {
+            y: 'May',
+            a: 25000
+        }, {
+            y: 'Jun',
+            a: 70000
+        }, {
+            y: 'Jul',
+            a: 72000
+        }, {
+            y: 'Aug',
+            a: 72000
+        }, {
+            y: 'Sep',
+            a: 45000
+        }, {
+            y: 'Oct',
+            a: 60000
+        }, {
+            y: 'Nov',
+            a: 65000
+        }, {
+            y: 'Dec',
+            a: 70000
+        }],
+        xkey: 'y',
+        ykeys: ['a'],
+        labels: ['Savings'],
+        hideHover: 'auto',
+        resize: true
+    });
+	
+	Morris.Area({
         element: 'morris-area-chart',
         data: [{
             period: '2010 Q1',
@@ -87,43 +116,4 @@ $(function() {
         hideHover: 'auto',
         resize: true
     });
-
-    Morris.Bar({
-        element: 'morris-bar-chart',
-        data: [{
-            y: '2006',
-            a: 100,
-            b: 90
-        }, {
-            y: '2007',
-            a: 75,
-            b: 65
-        }, {
-            y: '2008',
-            a: 50,
-            b: 40
-        }, {
-            y: '2009',
-            a: 75,
-            b: 65
-        }, {
-            y: '2010',
-            a: 50,
-            b: 40
-        }, {
-            y: '2011',
-            a: 75,
-            b: 65
-        }, {
-            y: '2012',
-            a: 100,
-            b: 90
-        }],
-        xkey: 'y',
-        ykeys: ['a', 'b'],
-        labels: ['Series A', 'Series B'],
-        hideHover: 'auto',
-        resize: true
-    });
-    
 });
