@@ -32,7 +32,8 @@ public class DashboardController {
 	 * @return String
 	 */
 	@RequestMapping(value = "/getDashboardDetails", method = RequestMethod.GET)
-	public @ResponseBody String getDashBoardDetails(@PathVariable(value ="userId") String userId ){
+	public @ResponseBody String getDashBoardDetails(){
+		String userId ="rahil";
 		System.out.println("DashboardController");
 		List dashboardDetailsList = dashboardServiceInf.getDashBoardDetails(userId);
 		return "hello";
