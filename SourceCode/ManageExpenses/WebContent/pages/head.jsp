@@ -6,6 +6,9 @@
 
 <title>Manage Expense</title>
 
+<!-- jQuery -->
+<script type ="text/javascript" src="resources/javascript/vendor/jquery/jquery.min.js"></script>
+
 <!-- Bootstrap Core CSS -->
 <link href="resources/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -25,5 +28,6 @@
 <script src="resources/javascript/js/dashboardCharts.js"></script>
 
 <!-- application related js -->
+<!--
 <script src="resources/javascript/application/dashboard.js"></script>
-
+-->
