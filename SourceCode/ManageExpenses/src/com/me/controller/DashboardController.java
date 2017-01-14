@@ -43,24 +43,24 @@ public class DashboardController {
 	 */
 //	@RequestMapping(value = "/getRequirementTemplateData", method = RequestMethod.GET)
 	@RequestMapping(value = "/getDashboardDetails", method = RequestMethod.GET)
-	public Map<String,Object> getDashBoardDetails(){
+	public @ResponseBody Map<String,Object>  getDashBoardDetails(){
 		
+		//Map<String,Object>
 		String userId ="rahil";
 		System.out.println("DashboardController");
 		List dashboardDetailsList = dashboardServiceInf.getDashBoardDetails(userId);
 		Map<String,Object> dashBoardMap = new HashMap<String, Object>();
-		dashBoardMap.put("dashboard", dashboardDetailsList);
+		dashBoardMap.put("dashboard", dashboardDetailsList.get(0));
 		System.out.println("DashboardController : \n\tdashboardDetailsList.size() : " + dashboardDetailsList.size() + "\n\tdashboardDetailsList : " + dashboardDetailsList.get(0).toString());
 		
 		return dashBoardMap;
 	}
-/*
-	@RequestMapping(value="/getRequirementTemplateData" , method = RequestMethod.GET)
-	public  Map<String, Object> getRequirementTemplateData(){
-		Map<String,Object> result = headerService.getRequirementTemplateData();
-		return result;
 
+	@RequestMapping(value="/getRequirementTemplateData" , method = RequestMethod.GET)
+	public @ResponseBody String getRequirementTemplateData(){
+        System.out.println("DashboardController.java : getRequirementTemplateData");
+		return "dashBoardMap";
 	}
-*/	
+	
 	
 }
