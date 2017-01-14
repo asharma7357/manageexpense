@@ -207,3 +207,22 @@
 	<!-- /.row -->
 </div>
 <!-- /#page-wrapper -->
+<script type="text/javascript">
+
+$(document).ready(function() {
+	console.log("\tdashboard.jsp");
+	
+	$.ajax({
+			url : "resources/javascript/application/dashboard.js",
+			dataType : "script",
+			cache : true
+		}).done(function() {
+			me.application.dashboard.onload();
+		}).fail(function(jqXHR, textStatus) {
+			console.log("error in calling dashboard.js : \n\tjqXHR : " + JSON.stringify(jqXHR) + "\n\ttextStatus : " + textStatus);
+	});
+	
+});
+
+
+</script>
