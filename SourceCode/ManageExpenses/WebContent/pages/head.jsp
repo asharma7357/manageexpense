@@ -28,6 +28,5 @@
 <script src="resources/javascript/js/dashboardCharts.js"></script>
 
 <!-- application related js -->
-<!--
-<script src="resources/javascript/application/dashboard.js"></script>
--->
+<!-- <script src="./resources/javascript/application/dashboard.js"></script> -->
+

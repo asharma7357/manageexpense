@@ -212,6 +212,7 @@
 $(document).ready(function() {
 	console.log("\tdashboard.jsp");
 	
+	
 	$.ajax({
 			url : "resources/javascript/application/dashboard.js",
 			dataType : "script",
