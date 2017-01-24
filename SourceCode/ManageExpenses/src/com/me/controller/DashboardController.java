@@ -8,6 +8,7 @@ import javax.annotation.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -21,11 +22,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-
-
-
-
-
+import com.me.bean.DashboardBean;
 import com.me.service.inf.DashboardServiceInf;
 
 
@@ -43,7 +40,7 @@ public class DashboardController {
 	 */
 //	@RequestMapping(value = "/getRequirementTemplateData", method = RequestMethod.GET)
 	@RequestMapping(value = "/getDashboardDetails", method = RequestMethod.GET)
-	public @ResponseBody Map<String,Object>  getDashBoardDetails(){
+	public @ResponseBody String  getDashBoardDetails(Model model){
 		
 		//Map<String,Object>
 		String userId ="rahil";
@@ -51,16 +48,41 @@ public class DashboardController {
 		List dashboardDetailsList = dashboardServiceInf.getDashBoardDetails(userId);
 		Map<String,Object> dashBoardMap = new HashMap<String, Object>();
 		dashBoardMap.put("dashboard", dashboardDetailsList.get(0));
+		model.addAttribute("dashboard", dashboardDetailsList.get(0));
 		System.out.println("DashboardController : \n\tdashboardDetailsList.size() : " + dashboardDetailsList.size() + "\n\tdashboardDetailsList : " + dashboardDetailsList.get(0).toString());
 		
-		return dashBoardMap;
+		return "dashboard";
 	}
 
 	@RequestMapping(value="/getRequirementTemplateData" , method = RequestMethod.GET)
-	public @ResponseBody String getRequirementTemplateData(){
+	public String getRequirementTemplateData(Model model){
         System.out.println("DashboardController.java : getRequirementTemplateData");
-		return "dashBoardMap";
+
+		String userId ="rahil";
+		System.out.println("DashboardController");
+		List dashboardDetailsList = dashboardServiceInf.getDashBoardDetails(userId);
+		Map<String,Object> dashBoardMap = new HashMap<String, Object>();
+		dashBoardMap.put("dashboard", dashboardDetailsList.get(0));
+		System.out.println("DashboardController : \n\tdashboardDetailsList.size() : " + dashboardDetailsList.size() + "\n\tdashboardDetailsList : " + dashboardDetailsList.get(0).toString());
+
+        return "dashboard";
 	}
+
+	@RequestMapping(value="/getDashboardData" , method = RequestMethod.GET)
+	public DashboardBean getDashboardData(){
+        System.out.println("DashboardController.java : getRequirementTemplateData");
+
+		String userId ="rahil";
+		System.out.println("DashboardController");
+		List dashboardDetailsList = dashboardServiceInf.getDashBoardDetails(userId);
+		Map<String,Object> dashBoardMap = new HashMap<String, Object>();
+		dashBoardMap.put("dashboard", dashboardDetailsList.get(0));
+		System.out.println("DashboardController : \n\tdashboardDetailsList.size() : " + dashboardDetailsList.size() + "\n\tdashboardDetailsList : " + dashboardDetailsList.get(0).toString());
+
+        return (DashboardBean) dashboardDetailsList.get(0);
+	}
+
+	
 	
 	
 }

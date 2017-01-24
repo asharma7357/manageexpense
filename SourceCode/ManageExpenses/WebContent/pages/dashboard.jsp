@@ -207,12 +207,21 @@
 	<!-- /.row -->
 </div>
 <!-- /#page-wrapper -->
-<script type="text/javascript">
+<script type ="text/javascript" src="resources/javascript/vendor/jquery/jquery.min.js"></script>
+<script>
 
 $(document).ready(function() {
 	console.log("\tdashboard.jsp");
 	
-	
+	$.ajax({ 
+		url : "resources/javascript/application/dashboard.js",
+		dataType : "script",
+		cache : true		
+	}).done(function(){ 
+		console.log("inside done....");
+		me.application.dashboard.onload();
+	});
+	/*
 	$.ajax({
 			url : "resources/javascript/application/dashboard.js",
 			dataType : "script",
@@ -222,6 +231,7 @@ $(document).ready(function() {
 		}).fail(function(jqXHR, textStatus) {
 			console.log("error in calling dashboard.js : \n\tjqXHR : " + JSON.stringify(jqXHR) + "\n\ttextStatus : " + textStatus);
 	});
+	*/
 	
 });
 
